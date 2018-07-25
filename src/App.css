@@ -1,0 +1,144 @@
+*{
+  outline: none;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  padding: 20px;
+  color: white;
+}
+.App-header>input{
+  margin: 30px 30px 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  font-size: 1.2em;
+  color: white;
+  padding-left: 10px;
+}
+.App-header>input[type='number']{
+  width: 50px;
+}
+.App-header>button{
+  margin: 30px 5px;
+  padding: 5px 15px;
+  background: none;
+  border: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 1em;
+  color: white;
+  cursor: pointer;
+}
+.App-header>button:hover{
+  border: 1px solid rgb(129, 129, 129);
+
+}
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-results {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 50px;
+  border-bottom: 1px solid rgb(114, 114, 114);
+  width: 60%;
+  margin: auto;
+}
+.buttonRow{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+.App-results-Item{
+  margin: 10px;
+  border: 1px solid #6d6d6d;
+  border-radius: 5px;
+  padding: 20px;
+  -webkit-box-shadow: 7px 4px 18px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 7px 4px 18px -4px rgba(0,0,0,0.75);
+box-shadow: 7px 4px 18px -4px rgba(0,0,0,0.75);
+}
+.App-results-Item>img{
+  width: 100px;
+}
+.user-card{
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background: wheat;
+  -webkit-box-shadow: 10px 10px 35px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 35px 2px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 35px 2px rgba(0,0,0,0.75);
+}
+.closeBtn{
+  text-align: right;
+  margin: 0;
+}
+.closeBtn>a{
+  text-decoration: none;
+  font-size: 2em;
+  color: black;
+}
+.closeBtn>a:hover{
+  color: rgb(88, 88, 88);
+}
+.user-card-data{
+  padding: 0 30px;
+}
+.user-card>img{
+  width: 300px;
+  height: auto;
+}
+.user-card-data p{
+  border-bottom: 1px solid #999;
+  line-height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.data-item{
+  padding: 0 10px;
+  margin: 10px;
+  border: 1px solid #888;
+
+}
+.data-item>.title{
+  font-weight: 600;
+}
+.hideSpinner{
+  display: none !important;
+}
+.showSpinner{
+  display: block !important;
+}
+
+.dBottom{
+  width:100%;
+  padding: 10px;
+
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
